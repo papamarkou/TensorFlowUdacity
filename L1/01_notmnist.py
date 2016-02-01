@@ -11,21 +11,20 @@ from six.moves import cPickle as pickle
 
 BASEDIR = "/Users/theodore/workspace/pycharm/TensorFlowUdacity"
 
-DATADIR = "data"
+DATADIR = os.path.join(BASEDIR, "data")
+TRAINDATADIR = os.path.join(DATADIR, "notmnist", "notmnist_large")
+TESTDATADIR = os.path.join(DATADIR, "notmnist", "notmnist_small")
 
-os.path.join(BASEDIR, DATADIR)
+def get_dir_paths(root):
+  return [os.path.join(root, n) for n in sorted(os.listdir(root)) if os.path.isdir(os.path.join(root, n))]
 
-num_classes = 10
+def get_file_paths(root):
+  return [os.path.join(root, n) for n in sorted(os.listdir(root)) if os.path.isfile(os.path.join(root, n))]
 
-def get_data_folders(root):
-  data_folders = [os.path.join(root, d) for d in sorted(os.listdir(root)) if d != '.DS_Store']
-  if len(data_folders) != num_classes:
-    raise Exception(
-      'Expected %d folders, one per class. Found %d instead.' % (
-        num_classes, len(data_folders)))
-  print(data_folders)
-  return data_folders
+train_data_paths = get_dir_paths(TRAINDATADIR)
+test_data_paths = get_dir_paths(TESTDATADIR)
 
-train_folders = extract(train_filename)
-test_folders = extract(test_filename)
+nsamples = 5
 
+for i in np.arange(nsamples):
+    display(Image(filename=np.random.choice(get_file_paths(np.random.choice(test_data_paths)))))
