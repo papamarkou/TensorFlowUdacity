@@ -14,7 +14,7 @@ Before getting started, two steps need to be taken:
 
 1. Every notebook sets `BASEDIR`. You need to set `BASEDIR` to the root of your cloned git repository. In the future, this
   git repository might be turned to a Python package to avoid manual configuration of paths.
-2. For assignment 1, download the [notMNIST data](http://yaroslavvb.blogspot.co.uk/2011/09/notmnist-dataset.htmlS).
+2. For assignment 1, download the [notMNIST data](http://yaroslavvb.blogspot.co.uk/2011/09/notmnist-dataset.html).
   More specifically, download the [large notMNIST](http://yaroslavvb.com/upload/notMNIST/notMNIST_large.tar.gz) and
   [small notMNIST](notMNIST_small.tar.gz) datasets, decompress them and place them in
   `BASEDIR/data/notmnist/notmnist_large` and `BASEDIR/data/notmnist/notmnist_small` respectively. The large and small
