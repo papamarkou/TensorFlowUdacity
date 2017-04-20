@@ -2,9 +2,8 @@ A Companion to TensorFlow Udacity MOOC (WIP)
 ==========================================================================================
 
 This repository aims at accompanying and complementing the Python code of the
-[TensorFlow Udacity MOOC by Google](https://www.udacity.com/course/viewer#!/c-ud730). It provides one possible solution to
-the MOOC quizzes and assignments. When deemed useful, alternative solutions or elaborations are provided to clarify
-concepts or methods.
+[TensorFlow Udacity MOOC by Google](https://www.udacity.com/course/viewer#!/c-ud730). It provides elaborate solutions to
+the MOOC assignments. When deemed useful, alternative solutions or elaborations are provided to clarify concepts or methods.
 
 Jupyter notebooks are used for formatting the code in order to display textual and visual output along with code. The
 notebooks have been developed using Python 2.7.11 (work in progress). If you would like to recommend any improvements, feel
